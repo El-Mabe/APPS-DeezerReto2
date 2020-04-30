@@ -1,0 +1,2 @@
+rootProject.name='Api-Deezer'
+include ':app'
