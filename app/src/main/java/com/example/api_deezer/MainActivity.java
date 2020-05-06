@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements AdapterPlaylist.O
     private RecyclerView rv_playlist;
     private AdapterPlaylist adapterPlaylist;
 
-    private String playlist_default="";
+    private String playlist_default="rels b";
 
     private DeezerConnect deezerConnect;
 
@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity implements AdapterPlaylist.O
 
     }
 
-    public void searchPlaylist(String playlisName){
-        DeezerRequest request = DeezerRequestFactory.requestSearchPlaylists(playlisName);
+    public void searchPlaylist(String playlistName){
+        DeezerRequest request = DeezerRequestFactory.requestSearchPlaylists(playlistName);
         AsyncDeezerTask task = new AsyncDeezerTask(deezerConnect, new JsonRequestListener() {
 
 
