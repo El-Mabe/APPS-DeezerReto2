@@ -114,6 +114,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/songTvAlbumCancion" />
 
+    <!--
     <TextView
         android:id="@+id/songTvTimeCancion"
         android:layout_width="wrap_content"
@@ -124,6 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/songTvDuraCancion" />
+        -->
     <Button
         android:id="@+id/songBtnPlay"
         android:layout_width="wrap_content"
