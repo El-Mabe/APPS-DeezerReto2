@@ -124,4 +124,7 @@ public class MainActivity extends AppCompatActivity implements AdapterPlaylist.O
         i.putExtra("playlist", playlist.getId());
         startActivity(i);
     }
+
+
+
 }

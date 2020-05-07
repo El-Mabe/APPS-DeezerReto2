@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
     tools:context=".activity_playlist">
 
 
@@ -14,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:cardBackgroundColor="#3B3E42"
+        app:cardBackgroundColor="#1C0BFF"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,8 +28,8 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:background="#3B3E42"
-
+                android:background="#1C0BFF"
+                android:onClick="onClick"
 
                 app:srcCompat="@drawable/vector_back" />
 
@@ -41,7 +42,9 @@
                 android:layout_marginEnd="70dp"
                 android:layout_marginBottom="8dp"
                 android:text="Buscar Playlist"
-                android:textSize="24sp"/>
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -49,17 +52,16 @@
                 android:layout_weight="1" />
 
             <ImageButton
-                android:id="@+id/playlistBtnMenu"
+                android:id="@+id/playlistBtnHome"
                 android:layout_width="40dp"
                 android:layout_height="33dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="#3B3E42"
-
-
-                app:srcCompat="@drawable/vector_menu" />
+                android:backgroundTint="#1C0BFF"
+                app:srcCompat="@drawable/vector_home"
+                android:onClick="onClick"/>
 
         </LinearLayout>
 
@@ -90,7 +92,9 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playlistIvBanner" />
+        app:layout_constraintTop_toBottomOf="@+id/playlistIvBanner"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/playlisTvDescrip"
@@ -103,7 +107,9 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playlistTvNamePlaylist" />
+        app:layout_constraintTop_toBottomOf="@+id/playlistTvNamePlaylist"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/playlistTvNumCanciones"
@@ -113,7 +119,9 @@
         android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playlisTvDescrip" />
+        app:layout_constraintTop_toBottomOf="@+id/playlisTvDescrip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/playlistTvNumFans"
@@ -123,7 +131,9 @@
         android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/playlistTvNumCanciones"
-        app:layout_constraintTop_toBottomOf="@+id/playlisTvDescrip" />
+        app:layout_constraintTop_toBottomOf="@+id/playlisTvDescrip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
 
 

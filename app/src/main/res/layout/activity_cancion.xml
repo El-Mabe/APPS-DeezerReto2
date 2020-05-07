@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_track">
+    tools:context=".activity_track"
+    android:background="@drawable/bg_color">
 
 
     <TextView
@@ -16,7 +17,9 @@
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/songImageCancion" />
+        app:layout_constraintTop_toBottomOf="@+id/songImageCancion"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/songTvAlbumCancion"
@@ -27,16 +30,18 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewSongTop"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:cardBackgroundColor="#3B3E42"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="#1C0BFF">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,8 +55,10 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:background="#3B3E42"
-                app:srcCompat="@drawable/vector_back" />
+                android:background="#1C0BFF"
+                app:srcCompat="@drawable/vector_back"
+                android:onClick="onClick"
+                />
 
             <TextView
                 android:id="@+id/songTvShowCancion"
@@ -62,7 +69,9 @@
                 android:layout_marginEnd="70dp"
                 android:layout_marginBottom="8dp"
                 android:text="Ver Canción"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -71,13 +80,14 @@
 
             <ImageButton
                 android:id="@+id/songBtnMenu"
-                android:layout_width="wrap_content"
+                android:layout_width="40dp"
                 android:layout_height="33dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:background="#3B3E42"
-                app:srcCompat="@drawable/vector_menu" />
+                android:background="#1C0BFF"
+                app:srcCompat="@drawable/vector_home"
+                android:onClick="onClick"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -101,7 +111,9 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/songTvNameCancion" />
+        app:layout_constraintTop_toBottomOf="@+id/songTvNameCancion"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/songTvDuraCancion"
@@ -112,7 +124,9 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/songTvAlbumCancion" />
+        app:layout_constraintTop_toBottomOf="@+id/songTvAlbumCancion"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
     <!--
     <TextView

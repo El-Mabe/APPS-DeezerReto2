@@ -109,6 +109,18 @@ public class activity_track extends AppCompatActivity {
     }
 
     public void onClick(View view){
+        Intent miIntent = null;
 
+
+        switch (view.getId()){
+            case R.id.songBtnBack:
+                miIntent =new Intent(activity_track.this, activity_playlist.class );
+                break;
+
+            case R.id.songBtnMenu:
+                miIntent =new Intent(activity_track.this, MainActivity.class );
+                break;
+        }
+        startActivity(miIntent);
     }
 }

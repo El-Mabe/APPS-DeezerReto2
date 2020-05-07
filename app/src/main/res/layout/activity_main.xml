@@ -8,73 +8,78 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
+    <!--
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cardViewMainTop"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           app:cardBackgroundColor="#1929FF"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewMainTop"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:cardBackgroundColor="#3B3E42"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               tools:layout_editor_absoluteX="0dp"
+               tools:layout_editor_absoluteY="107dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="107dp">
+               <ImageButton
+                   android:id="@+id/mainBtnBack"
+                   android:layout_width="wrap_content"
+                   android:layout_height="33dp"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginBottom="8dp"
+                   android:background="#3B3E42"
+                   app:srcCompat="@drawable/vector_back"
+                   />
 
-            <ImageButton
-                android:id="@+id/mainBtnBack"
-                android:layout_width="wrap_content"
-                android:layout_height="33dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="#3B3E42"
-                app:srcCompat="@drawable/vector_back" />
+               <TextView
+                   android:id="@+id/mainTvShowCancion"
+                   android:layout_width="wrap_content"
+                   android:layout_height="33dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginEnd="70dp"
+                   android:layout_marginBottom="8dp"
+                   android:text="Buscar Playlist"
+                   android:textSize="24sp" />
 
-            <TextView
-                android:id="@+id/mainTvShowCancion"
-                android:layout_width="wrap_content"
-                android:layout_height="33dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="70dp"
-                android:layout_marginBottom="8dp"
-                android:text="Buscar Playlist"
-                android:textSize="24sp" />
+               <Space
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+               <ImageButton
+                   android:id="@+id/mainBtnMenu"
+                   android:layout_width="40dp"
+                   android:layout_height="33dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginEnd="8dp"
+                   android:layout_marginBottom="8dp"
+                   android:background="#3B3E42"
+                   app:srcCompat="@drawable/vector_menu" />
 
-            <ImageButton
-                android:id="@+id/mainBtnMenu"
-                android:layout_width="40dp"
-                android:layout_height="33dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="#3B3E42"
-                app:srcCompat="@drawable/vector_menu" />
-
-        </LinearLayout>
+           </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
+-->
 
     <androidx.cardview.widget.CardView
         android:id="@+id/mainCardViewSearch"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        app:cardBackgroundColor="#3B3E42"
+        app:cardBackgroundColor="#1C0BFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardViewMainTop">
+        app:layout_constraintTop_toBottomOf="@id/parent"
+        >
+        <!--
+        app:layout_constraintTop_toBottomOf="@id/cardViewMainTop"
+-->
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,14 +89,15 @@
 
             <EditText
                 android:id="@+id/mainEtSearchPlaylist"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="33dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:background="@color/cardview_light_background"
                 android:hint="Buscar una lista de reprodución"
+                android:textColorHint="#191919"
 
                />
 
@@ -103,12 +109,13 @@
             <ImageButton
                 android:id="@+id/mainBtnSearch"
                 android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_marginEnd="16dp"
 
-                android:background="#3B3E42"
+
+                android:background="#1C0BFF"
                 app:srcCompat="@drawable/vector_search" />
 
 

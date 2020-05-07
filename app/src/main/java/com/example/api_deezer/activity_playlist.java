@@ -130,4 +130,9 @@ public class activity_playlist extends AppCompatActivity implements AdapterTrack
         i.putExtra("track", track.getId());
         startActivity(i);
     }
+
+    public void onClick(View view){
+        Intent miIntent = new Intent(activity_playlist.this, MainActivity.class );
+        startActivity(miIntent);
+    }
 }
